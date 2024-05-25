@@ -1,12 +1,116 @@
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/"><span>Bookers</span></a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a class="nav-link text-light" href="/users/172433">
+              <svg class="svg-inline--fa fa-house" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path></svg><!-- <i class="fa-solid fa-home"></i> Font Awesome fontawesome.com --> Home
+</a>          </li>
+          <li>
+            <a class="nav-link text-light" href="/users">
+              <svg class="svg-inline--fa fa-users" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"></path></svg><!-- <i class="fa-solid fa-users"></i> Font Awesome fontawesome.com --> Users
+</a>          </li>
+          <li>
+            <a class="nav-link text-light" href="/books">
+              <svg class="svg-inline--fa fa-book-open" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg><!-- <i class="fa-solid fa-book-open"></i> Font Awesome fontawesome.com --> Books
+</a>          </li>
+          <li>
+            <a class="nav-link text-light" rel="nofollow" data-method="delete" href="/users/sign_out">
+              <svg class="svg-inline--fa fa-right-from-bracket" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="right-from-bracket" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg><!-- <i class="fa-solid fa-sign-out-alt"></i> Font Awesome fontawesome.com --> Log out
+</a>          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+   <p id="notice">Welcome! You have signed up successfully.</p>
+   
+   <div class="container px-5 px-sm-0">
+   <div class="row">
+   <div class="col-md-3">
+   
+   <h2>User info</h2>
+   <%= image_tag @user.get_profile_image(100,100) %>
+   
+ <table class="table">
+  <tbody>
+   <tr></tr>
+   
+  <tr>
+	  <th>name</th>
+	  <th><%= @user.name %></th>
+  </tr>
+  
+  <tr>
+	  <th>introduction</th>
+	  <th><%= @user.introduction %></th>
+  </tr>
+  </tbody>
+ </table>
+　
+  <div class="row">
+   <div class="btn btn-outline-secondary btn-block">
+   <% if @user == current_user %>
+   <%= link_to "", edit_user_path(@user) %>
+  <% end %>
+  
+      <h2 class="mt-3">New book</h2>
+      <form action="/books" accept-charset="UTF-8" method="post">
+      <input type="hidden" name="authenticity_token" value="rrSOwxiCSCvS8XQgSX8N-qFEw2UGBdKGgyiv5gwuovUeYzm8HH1O9fTLxVWfgqwxtqSU9pjKQIbhs3i5fckjRw" autocomplete="off">
+  <div class="form-group">
+    <label for="book_title">Title</label>
+    <input class="form-control book_title" type="text" name="book[title]" id="book_title">
+  </div>
+  <div class="form-group">
+    <label for="book_opinion">Opinion</label>
+    <textarea class="form-control book_body" name="book[body]" id="book_body"></textarea>
+  </div>
+  <div class="form-group">
+    <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">
+  </div>
+</form>
+    </div>
+    <div class="col-md-8 offset-md-1">
+      <h2>Books</h2>
+      <table class="table table-hover table-inverse">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th>Opinion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+    </div>
+  </div>
+</div>
+
+      </main>
+
+
+
+
 <!-- ユーザーの詳細 -->
 <div>
-  <h3><%= @user.name %></h3>
-  <%= image_tag @user.get_profile_image(100,100) %>
-   <% if @user == current_user %>
-    <p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
-  <% end %>
+ 
+  <h3></h3>
+  <h3><h3>
+  
 </div>
 
 <!-- ユーザーの投稿一覧 -->
 
 <%= render 'books/list', books: @books %>
+
