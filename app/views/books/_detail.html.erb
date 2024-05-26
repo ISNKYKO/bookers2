@@ -1,0 +1,36 @@
+
+  <h2>Book dateil</h2>
+  
+  <table class="table table-hover table-inverse">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<tbody>
+  <td><%= image_tag book.user.get_profile_image(100,100) %><br>
+  <%= link_to "#{book.user.name}", user_path(@user) %></td>
+  <td><%= link_to "#{book.title}", "books/#{book.id}" %></td>
+  <td><%= book.body %></td>
+  <% if book.user == current_user %>
+  <td>
+    <%= link_to edit_book_path(book.id), class: "btn btn-sm btn-success" do %>
+    Edit
+    <% end %>
+  </td>
+  <td>
+    <%= link_to book_path(book), method: :delete, class: "btn btn-sm btn-danger", "data-confirm" => "本当に削除しますか？" do %>
+  delete
+   <% end %>
+  <% end %>
+  </td>
+  
+</tbody>
+</table>
+</div>
+</div>
+
